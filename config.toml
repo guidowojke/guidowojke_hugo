@@ -1,4 +1,8 @@
 baseURL = 'http://guidowojke.de/'
 languageCode = 'de-de'
-title = 'guidowojke.de powered by HUGO'
+title = 'Guido Wojke'
 theme = "ananke"
+
+[params]
+  background_color_class = "bg-black"
+  twitter = "https://twitter.com/GWojke7"
