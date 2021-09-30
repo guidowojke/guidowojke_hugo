@@ -1,0 +1,24 @@
+---
+name: CI
+'on':
+  pull_request:
+  push:
+    branches:
+      - develop
+  schedule:
+    - cron: "0 7 * * 0"
+
+defaults:
+  run:
+    working-directory: 'guidowojke_hugo'
+
+jobs:
+
+  hugo:
+    name: hugo build
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Hugo Build
+        uses: jakejarvis/hugo-build-action@v0.88.1
+    
